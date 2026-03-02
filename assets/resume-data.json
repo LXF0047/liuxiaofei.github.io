@@ -22,7 +22,7 @@
   },
   "summary": {
     "title": "专业技能",
-    "content": "<ul><li><p><strong>大模型:</strong> 深入掌握<em>Transformer</em>系列<em>BERT、GPT</em>等模型基本原理及应用；熟练<em>Qwen</em>系列模型微调（<em>SFT/LoRA/DeepSpeed）</em>；熟悉<em>LangChain、LangGraph、OpenManaus、Nemo Guardrails</em>等框架，用于<em>RAG</em>和<em>Agent</em>系统开发。</p></li><li><p><strong>机器学习:</strong>掌握常见机器学模型基本原理；<strong>熟练</strong>掌握<em>XGBoost、LightGBM、RF</em>等集成模型基本原理与调参优化；<strong> </strong>熟练使用<em>pandas、numpy、sklearn、PyTorch、TensorFlow</em>等常用工具；</p></li><li><p>其他: 熟悉大模型安全领域提示词<em>jailbreak、injection</em>检测架构方案设计。安全智能<em>SOC</em>系统构建。</p></li><li><p>CET6</p></li></ul><p></p>"
+    "content": "<ul><li><p><strong>大模型:</strong> 深入掌握<em>Transformer</em>系列<em>BERT、GPT</em>等模型基本原理及应用；熟练<em>Qwen</em>系列模型微调（<em>SFT/LoRA/DeepSpeed）</em>；熟悉<em>LangChain、LangGraph、OpenManaus、Nemo Guardrails</em>等框架，用于<em>RAG</em>和<em>Agent</em>系统开发。</p></li><li><p><strong>机器学习:</strong>掌握常见机器学模型基本原理；熟练掌握<em>XGBoost、LightGBM、RF</em>等集成模型基本原理与调参优化；<strong> </strong>熟练使用<em>pandas、numpy、sklearn、PyTorch、TensorFlow</em>等常用工具；</p></li><li><p>其他: 熟悉大模型安全领域提示词<em>jailbreak、injection</em>检测架构方案设计。安全智能<em>SOC</em>系统构建。</p></li><li><p>CET6</p></li></ul><p></p>"
   },
   "experience": {
     "title": "工作经历",
