@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "resumeName": "2025cv",
+    "resumeId": "019befad-5037-7589-98d9-f39246bbcad0",
+    "generatedAt": "2026-03-03T01:27:38"
+  },
+  "profile": {
+    "name": "Liu Xiaofei",
+    "headline": "Large Language Models | Machine Learning",
+    "email": "liuxiaofei0047@gmail.com",
+    "phone": "",
+    "location": "",
+    "backgroundImage": "assets/background.webp",
+    "avatar": "",
+    "links": [
+      {
+        "label": "Email",
+        "url": "mailto:liuxiaofei0047@gmail.com",
+        "type": "email"
+      }
+    ]
+  },
+  "summary": {
+    "title": "Professional Skills",
+    "content": "<ul><li><p><strong>Large Language Models:</strong> In-depth understanding of the fundamental principles and applications of <em>Transformer</em>-series models such as <em>BERT</em> and <em>GPT</em>; proficient in fine-tuning <em>Qwen</em>-series models (<em>SFT/LoRA/DeepSpeed</em>); familiar with frameworks like <em>LangChain, LangGraph, OpenManaus, Nemo Guardrails</em> for developing <em>RAG</em> and <em>Agent</em> systems.</p></li><li><p><strong>Machine Learning:</strong> Understands the basic principles of common machine learning models; <strong>proficient</strong> in the fundamental principles and hyperparameter tuning/optimization of ensemble models like <em>XGBoost, LightGBM, RF</em>; proficient in using common tools such as <em>pandas, numpy, sklearn, PyTorch, TensorFlow</em>.</p></li><li><p>Other: Familiar with designing architectural solutions for detecting prompt <em>jailbreak</em> and <em>injection</em> in the field of LLM security. Experience in building Security Operations Center (<em>SOC</em>) intelligent systems.</p></li><li><p>CET-6</p></li></ul><p></p>"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "company": "Shanghai Douxiang Information Technology Co., Ltd. (FreeBuf & VulBox)",
+        "role": "Senior Machine Learning Engineer",
+        "location": "",
+        "period": "2021.11 - 2025.8",
+        "description": "<ul><li><p>Led the LLM system security protection project. Implemented detection solutions for security risks and privacy data leakage risks in model input/output content within LLM systems.</p></li><li><p>Led the intelligent agent project for automated vulnerability reproduction. Implemented automated reproduction and report generation for SQL injection-type reports in VulBox.</p></li><li><p>Led the fine-tuning project for cybersecurity vertical domain models. Completed training data cleaning, SFT data construction, and fine-tuning based on Qwen and Pangu series models, including PPO alignment.</p></li><li><p>Led the SOC intelligent RAG assistant project. Custom-developed RAG assistants across multiple projects, supporting retrieval and Q&A functions for various data sources.</p></li><li><p>Participated in traffic detection model optimization.</p></li></ul><p></p>",
+        "website": null
+      },
+      {
+        "company": "Beijing Jinjing Yunhua Technology Co., Ltd.",
+        "role": "Machine Learning Development Engineer",
+        "location": "",
+        "period": "2020.3 - 2021.10",
+        "description": "<ul><li><p>Participated in the development and optimization of malicious encrypted traffic detection models and family multi-classification models.</p></li><li><p>Participated in the development and optimization of DGA traffic detection models.</p></li><li><p>Participated in the development and optimization of SQL injection detection models.</p></li></ul><p></p>",
+        "website": null
+      }
+    ]
+  },
+  "projects": {
+    "title": "Project Experience",
+    "items": [
+      {
+        "name": "LLM Security Computing Cloud",
+        "period": "",
+        "description": "<p><em>Built security guardrails for large language models. Supports both online cloud and private deployment. Used for controlling input/output in enterprise LLM applications, with main functions including detecting prompt jailbreak, prompt injection, sensitive content identification, and specific content filtering.</em></p><ul><li><p>Designed the detection architecture and workflow; compared capabilities of LLM security platforms/models like Nvidia NeMo, Gemma Shield, Llama Guard.</p></li><li><p>Fine-tuned the mDeBERTa model for Prompt injection & jailbreak detection (binary and ternary classification). Built 50k+ Chinese annotated datasets. Improved F1-score by 0.21.</p></li><li><p>Fine-tuned Qwen3 0.6B, 1.7B, 8B models for Prompt content safety detection. Annotated 80k Chinese data points. Performance improved by 27% compared to the base model.</p></li><li><p>Used Qwen1.7B model to calculate perplexity and detect Prompt jailbreak via heuristic methods. Annotated 10k Chinese data points, improving performance by 14% over the base model.</p></li><li><p>Privacy data identification: constructed 10k Chinese data points to train and optimize an NER model. Improved TPS.</p></li><li><p>RAG factual relevance detection.</p></li><li><p>Evaluated jailbreak risks for Qwen models, testing capabilities using different jailbreak methods and constructing detection sets via neural network testing approaches.</p></li></ul><p></p>",
+        "website": null
+      },
+      {
+        "name": "Automated Vulnerability Report Reproduction",
+        "period": "",
+        "description": "<p style=\"text-align: left;\"><em>Built an intelligent agent system for automatically reproducing vulnerabilities based on report content. Vulnerabilities are from VulBox reports. Designed an automated reproduction system based on key information in reports (e.g., vulnerability type, version, reproduction logic) to replicate the operational steps described.</em></p><ul><li><p style=\"text-align: left;\">Designed a human-in-the-loop agent architecture comprising five modules: controller, events, session, agent, tracer.</p></li><li><p style=\"text-align: left;\">Built a report content parsing and key entity extraction Agent to extract thematic information. Validated using a reasonableness analysis model.</p></li><li><p>Built an automated sqlmap reproduction tool, automating sqlmap using intent recognition and few-shot methods.</p></li><li><p>Built app control tools for WeChat Mini Program and Official Account vulnerabilities, implementing automated input and click processes based on OmniParser + pyautogui.</p></li><li><p>Optimized recognition accuracy for operation boxes in OmniParser, improving accuracy by 15% while reducing token consumption by 70%.</p></li></ul><p></p>",
+        "website": null
+      },
+      {
+        "name": "SOC Platform Q&A System",
+        "period": "",
+        "description": "<p><em>Integrated large language model intelligent Q&A into the SOC platform. Built a RAG Q&A system based on platform situational awareness, threat alerts, and local enterprise knowledge bases.</em></p><ul><li><p>Customized corpus collection and organization; built multi-level indexes for the corpus using small models.</p></li><li><p>Corpus segmentation; used a hybrid recall method combining labels and similarity to query data and perform re-ranking. Improved recall rate by 5%.</p></li><li><p>Built a Faiss vector database.</p></li><li><p>Designed NL2SQL prompts and similar question hit redirection based on database table structures. Reduced token consumption for repeated questions and improved SQL query accuracy and efficiency.</p></li><li><p>Post-processing of Q&A results: privacy data filtering, answer consistency detection.</p></li></ul><p></p>",
+        "website": null
+      },
+      {
+        "name": "Cybersecurity Vertical Domain Model",
+        "period": "",
+        "description": "<p><em>Continued pre-training + fine-tuning on security domain data across models of different scales to build a cybersecurity vertical domain model, primarily focused on vulnerabilities</em>.</p><ul><li><p>Continued pre-training data processing: built an 80B token training dataset, used ftfy for data encoding repair, implemented dynamic re-weighting for data sampling.</p></li><li><p>Vulnerability report scoring and annotation: used 5k SFT data for fine-tuning, combined with few-shot to implement scoring and issue annotation for VulBox reports.</p></li><li><p>Optimization and orchestration of vulnerability report reproduction steps: implemented core step re-orchestration.</p></li><li><p>SFT data construction. Used DeepSpeed for full-parameter fine-tuning of the continued pre-trained model, and LoRA for fine-tuning vulnerability-related models.</p></li><li><p>Fine-tuned the Qwen2.5-VL multimodal large language model to address issues where key information is contained within images in vulnerability reports.</p></li></ul><p></p>",
+        "website": null
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "Northeastern University",
+        "degree": "Master's Degree",
+        "area": "Software Engineering",
+        "degreeArea": "Master's Degree · Software Engineering",
+        "location": "",
+        "period": "2017.9 - 2020.1",
+        "description": "",
+        "website": null
+      },
+      {
+        "school": "Dalian Jiaotong University",
+        "degree": "Bachelor's Degree",
+        "area": "Software Engineering",
+        "degreeArea": "Bachelor's Degree · Software Engineering",
+        "location": "",
+        "period": "2013.9 - 2017.6",
+        "description": "",
+        "website": null
+      }
+    ]
+  },
+  "awards": null,
+  "certifications": {
+    "title": "Other",
+    "items": [
+      {
+        "title": "Patent",
+        "issuer": "",
+        "date": "",
+        "description": "<p>\"Subdomain Generation Method, Subdomain Naming Pattern Learning Method, and Apparatus\"</p>",
+        "website": null
+      },
+      {
+        "title": "National Key R&D Program",
+        "issuer": "",
+        "date": "",
+        "description": "<p>4.2 Capital Market AI Service and Security Regulation Synergy Technology</p>",
+        "website": null
+      },
+      {
+        "title": "Competitions",
+        "issuer": "",
+        "date": "",
+        "description": "<ul><li><p>10th Place, China Merchants Bank FinTech Elite Training Camp - Enterprise Financial Fraud Prediction</p></li><li><p>8th Place (Finalist), China UnionPay Geek Challenge - Data Modeling Track</p></li></ul>",
+        "website": null
+      }
+    ]
+  },
+  "customSections": [
+    {
+      "id": "019caf44-be2c-7378-8f98-5151b221e6be",
+      "type": "projects",
+      "title": "Project Experience",
+      "items": [
+        {
+          "name": "DGA Traffic Detection Optimization",
+          "period": "",
+          "description": "<p><em>Optimized detection capabilities for single-word type family domains; optimized false positives for cloud service domain names.</em></p><ul><li><p>Expanded the domain name segmentation dictionary, adding special entity words like common English abbreviations, brand abbreviations, and Pinyin words to improve the model's ability to recognize meaningful words in legitimate domains.</p></li><li><p>Constructed new features for single-word type DGA families, such as semantic continuity scores, to enhance the original model's classification capability.</p></li><li><p>Used DBSCAN clustering to cluster different DGA families, effectively identifying pseudo-random word patterns, and assisted in optimizing rules and models.</p></li><li><p>Built rule-based whitelists for special cases like server and CDN domain names, significantly reducing model false positive rates and achieving high recall with low false positives.</p></li></ul><p></p>",
+          "website": null
+        },
+        {
+          "name": "Traffic Dynamic Baseline Detection",
+          "period": "",
+          "description": "<p><em>Detected server traffic, using time-series models combined with rules to build traffic dynamic baselines and multi-level alert mechanisms.</em></p><ul><li><p>Processed traffic data anomalies and merged duplicate data.</p></li><li><p>Used the Prophet algorithm to build a multi-period time-series model for trend prediction of traffic, performing confidence interval grading for anomalies.</p></li><li><p>Enhanced the model for special dates using rules to improve detection accuracy in edge scenarios.</p></li></ul><p></p>",
+          "website": null
+        },
+        {
+          "name": "Vulnerability Intelligence Data Auto-Completion",
+          "period": "",
+          "description": "<p><em>Analyzed content in intelligence data, built a vector database for fast lookup of similar content like version numbers and CVE IDs.</em></p><ul><li><p>Automatically extracted CPE fields from MySQL, performed JSON formatting and vectorization, and built a Milvus vector database to support fast retrieval.</p></li><li><p>Used the Qwen model to parse vulnerability intelligence data, extract strings conforming to CPE format and convert them to JSON objects, transform them into vectors, and query in Milvus.</p></li><li><p>Used Qwen to analyze vulnerability description texts and extract intelligence text. Extracted standardized strings.</p></li><li><p>Based on vector retrieval returning candidate CPEs, combined with LLM extraction of version constraints for precise filtering.</p></li></ul><p></p>",
+          "website": null
+        },
+        {
+          "name": "Malicious Encrypted Traffic Detection & Family Identification",
+          "period": "",
+          "description": "<p><em>Detected malicious encrypted traffic within time-series windows using a multi-model voting mechanism and performed multi-classification of malicious families.</em></p><ul><li><p>Collected open-source malicious encrypted samples and in-house sandbox samples, completed data cleaning and standardization.</p></li><li><p>Extracted multi-dimensional features (e.g., TLS fingerprint, DNS behavior, traffic statistics), built various models including LightGBM, XGBoost, RandomForest.</p></li><li><p>Fused predictions from multiple models to form a voting mechanism, improving malicious traffic detection accuracy.</p></li><li><p>Optimized model inference speed, designed post-processing logic to filter false positive samples, improving actual detection rate.</p></li><li><p>Utilized intelligence sources for cross-validation, enhancing model generalization capability.</p></li><li><p>Built an XGBoost multi-classification model covering 33 family categories.</p></li></ul><p></p>",
+          "website": null
+        },
+        {
+          "name": "DGA Domain Detection",
+          "period": "",
+          "description": "<p><em>DGA domain name identification and malicious family classification.</em></p><ul><li><p>Extracted structural, statistical, and linguistic features to build DGA detection models; fused multiple models to build a Stacking ensemble classifier.</p></li><li><p>Designed vocabulary collision and voting mechanisms for family identification, combined static and behavioral analysis to improve accuracy.</p></li><li><p>Optimized detection speed to support real-time batch domain name processing.</p></li><li><p>Introduced offline correlation analysis based on IP and domain names, accurately identifying active botnets behind Fast-Flux strategies, effectively reducing false positive rates.</p></li></ul><p></p>",
+          "website": null
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "copy": "© 2026 Liu Xiaofei",
+    "quote": "Large Language Models | Machine Learning"
+  }
+}

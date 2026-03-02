@@ -154,7 +154,7 @@
             const hasGithub = links.some((link) => normalizeSocialType(link.type, link.label, link.url) === "github");
             const mergedLinks = hasGithub
                 ? links
-                : [...links, { label: "GitHub", url: "https://github.com", type: "github" }];
+                : [...links, { label: "GitHub", url: "https://github.com/LXF0047", type: "github" }];
 
             socialLinks.innerHTML = mergedLinks.map(link => {
                 const type = normalizeSocialType(link.type, link.label, link.url);
@@ -167,6 +167,17 @@
                                 ${ICONS[type] || ICONS.link}
                             </span>
                             <span class="text-sm font-medium tracking-wide">${emailText}</span>
+                        </span>
+                    `;
+                }
+                if (type === "github") {
+                    const githubText = String(link.url || "");
+                    return `
+                        <span class="flex items-center gap-2 text-gray-500">
+                            <span class="p-1.5 bg-white/50 backdrop-blur-sm rounded-full shadow-sm">
+                                ${ICONS[type] || ICONS.link}
+                            </span>
+                            <span class="text-sm font-medium tracking-wide">${githubText}</span>
                         </span>
                     `;
                 }
@@ -206,26 +217,9 @@
             const container = document.getElementById('projects-container');
             const projectItems = asArray(projects?.items);
 
-            const extraBlocks = asArray(customSections)
-                .filter((section) => section.type === "experience" && asArray(section.items).length > 0)
-                .map((section) => {
-                    const cards = section.items.map((item) => `
-                        <div class="mb-5">
-                            <h4 class="font-semibold text-gray-700 mb-1">${item.company || ''}</h4>
-                            <p class="text-xs text-blue-500 mb-2">${item.role || ''}</p>
-                            <div class="text-sm text-gray-600 rich-text">${item.description || ''}</div>
-                        </div>
-                    `).join('');
-                    return `
-                        <div class="group border-b border-gray-50 pb-8 last:border-0">
-                            <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3">
-                                <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition text-lg">${section.title || '补充项目'}</h3>
-                                <span class="text-xs font-medium text-blue-500 bg-blue-50 px-2 py-1 rounded">Extended</span>
-                            </div>
-                            <div>${cards}</div>
-                        </div>
-                    `;
-                });
+            const customItems = asArray(customSections)
+                .filter((section) => asArray(section.items).length > 0)
+                .flatMap((section) => asArray(section.items));
 
             const mainBlocks = projectItems.map((p) => `
                 <div class="group border-b border-gray-50 pb-8 last:border-0">
@@ -234,6 +228,16 @@
                         <span class="text-xs font-medium text-blue-500 bg-blue-50 px-2 py-1 rounded">${p.period || '项目'}</span>
                     </div>
                     <div class="text-sm text-gray-600 rich-text">${p.description || ''}</div>
+                </div>
+            `);
+
+            const extraBlocks = customItems.map((item) => `
+                <div class="group border-b border-gray-50 pb-8 last:border-0">
+                    <div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-3">
+                        <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 transition text-lg">${item.name || item.company || item.title || item.school || ''}</h3>
+                        <span class="text-xs font-medium text-blue-500 bg-blue-50 px-2 py-1 rounded">${item.period || '项目'}</span>
+                    </div>
+                    <div class="text-sm text-gray-600 rich-text">${item.description || ''}</div>
                 </div>
             `);
 
