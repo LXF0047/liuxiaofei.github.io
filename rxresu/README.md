@@ -1,0 +1,1 @@
+使用[rxresu](https://github.com/amruthpillai/reactive-resume)来生成简历
