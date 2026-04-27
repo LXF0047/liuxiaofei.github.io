@@ -2,7 +2,7 @@
   "meta": {
     "resumeName": "2025cv",
     "resumeId": "019befad-5037-7589-98d9-f39246bbcad0",
-    "generatedAt": "2026-04-27T19:49:17"
+    "generatedAt": "2026-04-27T19:54:26"
   },
   "profile": {
     "name": "刘晓飞",
@@ -59,7 +59,7 @@
         "description": "<p><em>设计并实现多Agent安全测试框架，支持root、recon、exploit等Agent，使用Hybrid Agent Teams + Delegation多Agent结构实现。</em></p><ul><li><p>设计并实现Hybrid Agent Teams + Delegation结构的多Agent安全测试框架。</p></li><li><p>构建多级Memory结构，优化子agent在运行时token消耗与已知信息的平衡。</p></li><li><p>解决多级agent间工具重复调用、任务级无线循环、工具错误调用导致的任务提前结束等问题。</p></li><li><p>失败任务日志回放，最小化修改相关skill中内容，实现系统自我优化。</p></li></ul><p></p>",
         "website": {
           "url": "https://github.com/LXF0047/greyhound",
-          "label": "gtihub"
+          "label": "github"
         }
       },
       {

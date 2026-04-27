@@ -14,7 +14,7 @@ from rxresu.env import load_project_env
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RESUME_NAME = "2025cv"
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "assets" / "resume-data.json"
-DEFAULT_RAW_OUTPUT_PATH = PROJECT_ROOT / "assets" / "resume-data-raw.json"
+DEFAULT_RAW_OUTPUT_PATH = PROJECT_ROOT / "rxresu_export" / "resume-data-raw.json"
 DEFAULT_BACKGROUND = "assets/background.webp"
 DEFAULT_BASE_URL = "https://rxresu.me/api/openapi"
 

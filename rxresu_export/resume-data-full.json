@@ -1,0 +1,441 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "",
+    "size": 64,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Xiaofei Liu",
+    "headline": "Large Language Models | Machine Learning",
+    "email": "liuxiaofei0047@gmail.com",
+    "phone": "",
+    "location": "",
+    "website": {
+      "url": "",
+      "label": ""
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Core Competencies",
+    "columns": 1,
+    "hidden": false,
+    "content": "<ul><li><p><strong>Large Language Models:</strong> In-depth understanding of <em>Transformer</em>-based models such as <em>BERT</em> and <em>GPT</em>; proficient in fine-tuning <em>Qwen</em> series models (<em>SFT/LoRA/DeepSpeed</em>); familiar with frameworks like <em>LangChain, LangGraph, OpenManaus, Nemo Guardrails</em> for <em>RAG</em> and <em>Agent</em> system development.</p></li><li><p><strong>Machine Learning:</strong> Solid grasp of common ML model principles; proficient in ensemble models like <em>XGBoost, LightGBM, Random Forest</em> and their tuning; skilled in using <em>pandas, numpy, sklearn, PyTorch, TensorFlow</em>.</p></li><li><p>Other: Experienced in designing detection architectures for prompt <em>jailbreak</em> and <em>injection</em> in LLM security; experienced in building intelligent <em>SOC</em> systems.</p></li><li><p>CET-6</p></li></ul><p></p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "experience": {
+      "title": "Work Experience",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "fpdvq6uzamvik0btxxx6yjza",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "company": "Shanghai Doushare Information Technology Co., Ltd. (FreeBuf & VulBox)",
+          "position": "Senior Machine Learning Engineer",
+          "location": "",
+          "period": "2021.11 - 2025.8",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<ul><li><p>Led LLM system security protection projects, implementing detection solutions for input/output security risks and privacy data leakage in LLM systems.</p></li><li><p>Led the intelligent vulnerability reproduction agent project, achieving automated reproduction and report generation for SQL injection reports in VulBox.</p></li><li><p>Led the cybersecurity domain-specific model fine-tuning project, including data cleaning, SFT data construction, fine-tuning of Qwen and Pangu series models, and PPO alignment.</p></li><li><p>Led the SOC intelligent RAG assistant project, customizing RAG assistants for multiple projects to support retrieval and Q&A from various data sources.</p></li><li><p>Participated in traffic detection model optimization.</p></li></ul><p></p>",
+          "roles": []
+        },
+        {
+          "id": "ve3s0f9cns5jrhz4na7iz921",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "company": "Beijing GoldenEye Cloud Technology Co., Ltd.",
+          "position": "Machine Learning Development Engineer",
+          "location": "",
+          "period": "2020.3 - 2021.10",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<ul><li><p>Participated in the development and optimization of malicious encrypted traffic detection models and family multi-classification models.</p></li><li><p>Participated in the development and optimization of DGA traffic detection models.</p></li><li><p>Participated in the development and optimization of SQL injection detection models.</p></li></ul><p></p>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "qah2yy0kbbw1rbfr9mvl01ch",
+          "hidden": false,
+          "school": "Northeastern University",
+          "degree": "Master",
+          "area": "Software Engineering",
+          "grade": "",
+          "location": "",
+          "period": "2017.9 - 2020.1",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "",
+          "options": {
+            "showLinkInTitle": false
+          }
+        },
+        {
+          "id": "uh8szbf0i2rrxa4chp3ltc8k",
+          "hidden": false,
+          "school": "Dalian Jiaotong University",
+          "degree": "Bachelor",
+          "area": "Software Engineering",
+          "grade": "",
+          "location": "",
+          "period": "2013.9 - 2017.6",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "",
+          "options": {
+            "showLinkInTitle": false
+          }
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019dcdbb-471b-77bc-82ae-47ccaa770f76",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Multi-Agent Self-Optimizing Penetration Testing System",
+          "period": "",
+          "website": {
+            "url": "https://github.com/LXF0047/greyhound",
+            "label": "github"
+          },
+          "description": "<p><em>Designed and implemented a multi-agent security testing framework supporting root, recon, exploit agents, using Hybrid Agent Teams + Delegation architecture.</em></p><ul><li><p>Designed and implemented the multi-agent security testing framework with Hybrid Agent Teams + Delegation structure.</p></li><li><p>Built a multi-level memory structure to balance token consumption and known information for sub-agents during runtime.</p></li><li><p>Resolved issues such as repeated tool calls across agents, infinite task loops, and premature task termination due to incorrect tool usage.</p></li><li><p>Implemented log replay for failed tasks to minimize modifications to relevant skills, enabling system self-optimization.</p></li></ul><p></p>"
+        },
+        {
+          "id": "umpqyjfs3242psbauzq0yox6",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "LLM Security Computing Cloud",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Built a security guardrail for LLMs, supporting both online cloud and on-premises deployment. Used for input/output control of enterprise LLM applications, including detection of prompt jailbreak, prompt injection, sensitive content identification, and specific content filtering.</em></p><ul><li><p>Designed the detection architecture and workflow, compared with LLM security platforms/models such as Nvidia NeMo, Gemma Shield, Llama Guard.</p></li><li><p>Fine-tuned a Prompt injection & jailbreak detection model (binary and ternary classification) based on mDeBERTa, using 50k+ Chinese annotated data. F1-score improved by 0.21.</p></li><li><p>Fine-tuned a Prompt content safety detection model based on Qwen3 0.6B, 1.7B, 8B models, with 80k Chinese annotated data. Performance improved by 27% over the base model.</p></li><li><p>Built a Prompt jailbreak detection model using perplexity calculation based on Qwen1.7B and heuristic methods, with 10k Chinese annotated data. Performance improved by 14% over the base model.</p></li><li><p>Developed privacy data identification by constructing 10k Chinese data to train and optimize an NER model, improving TPS.</p></li><li><p>Implemented RAG factuality relevance detection.</p></li><li><p>Evaluated jailbreak risks of Qwen models using various jailbreak methods, constructing a test set via neural network testing.</p></li></ul><p></p>"
+        },
+        {
+          "id": "o3u3qosqfps8mgxbkmm1qv7i",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Automated Vulnerability Report Reproduction",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p style=\"text-align: left;\"><em>Built an agent system to automatically reproduce vulnerabilities based on vulnerability report content. The reports are from VulBox, and the system uses key information such as vulnerability type, version, and reproduction logic to automate the reproduction process.</em></p><ul><li><p style=\"text-align: left;\">Designed a human-in-the-loop agent architecture including five modules: controller, events, session, agent, tracer.</p></li><li><p style=\"text-align: left;\">Built a report content parsing and key entity extraction agent to extract topic information, validated by a rationality analysis model.</p></li><li><p>Developed an automated sqlmap reproduction tool using intent recognition and few-shot methods.</p></li><li><p>Built an app control tool for WeChat mini-programs and official accounts, using OmniParser + pyautogui for automated input and click workflows.</p></li><li><p>Optimized the recognition accuracy of action boxes in OmniParser, improving accuracy by 15% while reducing token consumption by 70%.</p></li></ul><p></p>"
+        },
+        {
+          "id": "kb0njqqcaq4mfgok5c5738pz",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Cybersecurity Domain-Specific Model",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Continued pre-training and fine-tuning on security domain data across models of different sizes to build a security domain-specific model, mainly focused on vulnerabilities.</em></p><ul><li><p>Processed continued pre-training data, building an 80B token training dataset, using ftfy for encoding repair and dynamic re-weighting for data sampling.</p></li><li><p>Scored and annotated vulnerability reports, using 5k SFT data fine-tuned with few-shot to score and annotate VulBox reports.</p></li><li><p>Optimized and orchestrated vulnerability report reproduction steps, achieving core step re-orchestration.</p></li><li><p>Constructed SFT data. Performed full-parameter fine-tuning of continued pre-trained models with DeepSpeed, and Lora fine-tuning of vulnerability-related models.</p></li><li><p>Fine-tuned a multimodal large model based on Qwen2.5-VL to address key information contained in images within vulnerability reports.</p></li></ul><p></p>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "languages": {
+      "title": "Languages",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "interests": {
+      "title": "Interests",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "awards": {
+      "title": "竞赛",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Other",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "izowq10e3yldavqp5ewc85hx",
+          "hidden": false,
+          "title": "Patent",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p>Subdomain Generation Method, Subdomain Naming Pattern Learning Method, Device</p>",
+          "options": {
+            "showLinkInTitle": false
+          }
+        },
+        {
+          "id": "z3sh46s8az0gbnwz75hv1p2n",
+          "hidden": false,
+          "title": "National Key R&D Program",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p>4.2 AI Services and Security Supervision Coordination Technology for Capital Markets</p>",
+          "options": {
+            "showLinkInTitle": false
+          }
+        },
+        {
+          "id": "b93ps0tyt48bnpplt3i7vacc",
+          "hidden": false,
+          "title": "Competitions",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<ul><li><p>China Merchants Bank Fintech Elite Training Camp - Corporate Financial Fraud Prediction: 10th place</p></li><li><p>China UnionPay Geek Challenge - Data Modeling Track Finals: 8th place</p></li></ul>",
+          "options": {
+            "showLinkInTitle": false
+          }
+        }
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteering",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [
+    {
+      "title": "项目经历",
+      "columns": 1,
+      "hidden": false,
+      "id": "ksbaw7mztjyjbadwnwb0ge6s",
+      "type": "experience",
+      "items": []
+    },
+    {
+      "title": "Projects",
+      "columns": 1,
+      "hidden": false,
+      "id": "019caf44-be2c-7378-8f98-5151b221e6be",
+      "type": "projects",
+      "items": [
+        {
+          "id": "lem4fzbafl5xr10p3j16wa3v",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "SOC Platform Q&A System",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Integrated LLM-based intelligent Q&A into the SOC platform. Built a RAG Q&A system based on platform situational awareness, threat alerts, and local enterprise knowledge bases.</em></p><ul><li><p>Collected and organized customized corpora, using small models to build multi-level indices for the corpora.</p></li><li><p>Chunked corpora, used label + similarity hybrid recall for data retrieval and re-ranking, improving recall rate by 5%.</p></li><li><p>Built a Faiss vector database.</p></li><li><p>Designed NL2SQL prompts based on database table structures and implemented similar question hit and jump functionality, reducing token consumption for repeated questions and improving SQL query accuracy and efficiency.</p></li><li><p>Post-processed Q&A results, including privacy data filtering and answer consistency checking.</p></li></ul><p></p>"
+        },
+        {
+          "id": "rv24apfk61u8vujpdh42bsoc",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Automated Vulnerability Intelligence Data Completion",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Analyzed intelligence data content and built a vector database for fast retrieval of similar content such as version numbers and CVE IDs.</em></p><ul><li><p>Automatically extracted CPE fields from MySQL, formatted them as JSON, vectorized them, and built a Milvus vector database for fast retrieval.</p></li><li><p>Used the Qwen model to parse vulnerability intelligence data, extract strings conforming to CPE format, convert them to JSON objects, vectorize them, and query in Milvus.</p></li><li><p>Qwen analyzed vulnerability description texts and extracted intelligence texts, producing standardized strings.</p></li><li><p>Returned candidate CPEs based on vector retrieval, combined with version constraint extraction by the LLM for precise filtering.</p></li></ul><p></p>"
+        },
+        {
+          "id": "019caf40-eef7-70d9-ba7d-6dd40d25d057",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "Malicious Encrypted Traffic Detection and Family Identification",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Detected malicious encrypted traffic within time windows using a multi-model voting mechanism and performed multi-classification of malicious families.</em></p><ul><li><p>Collected open-source malicious encrypted samples and self-developed sandbox samples, performed data cleaning and standardization.</p></li><li><p>Extracted multi-dimensional features (e.g., TLS fingerprint, DNS behavior, traffic statistics) and built models including LightGBM, XGBoost, RandomForest.</p></li><li><p>Fused predictions from multiple models into a voting mechanism to improve malicious traffic detection accuracy.</p></li><li><p>Optimized model inference speed and designed post-processing logic to filter false positives, improving actual detection rate.</p></li><li><p>Used intelligence sources for cross-validation to enhance model generalization.</p></li><li><p>Built an XGBoost multi-classification model covering 33 family categories.</p></li></ul><p></p>"
+        },
+        {
+          "id": "019cae4e-be9b-72ba-bc17-3a61d84ea645",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "name": "DGA Traffic Detection",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Built binary and multi-classification models for DGA domain names, designed a false positive reduction system for online environments, and optimized detection for word-type family domains.</em></p><ul><li><p>Extracted structural, statistical, and linguistic features to build DGA identification models, fused multiple models into a Stacking ensemble classifier.</p></li><li><p>Designed word list collision and voting mechanisms for family identification, combined static and behavioral analysis to improve accuracy.</p></li><li><p>Introduced offline correlation analysis based on IP and domain names to accurately identify active botnets behind Fast-Flux strategies, effectively reducing false positive rates.</p></li><li><p>Optimized word list content for word-type domains, combined with BERT model for semantic detection.</p></li></ul><p></p>"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "template": "rhyhorn",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "summary",
+            "profiles",
+            "education",
+            "experience",
+            "certifications"
+          ],
+          "sidebar": [
+            "skills",
+            "interests",
+            "publications",
+            "volunteer",
+            "references",
+            "awards",
+            "languages"
+          ]
+        },
+        {
+          "fullWidth": true,
+          "main": [
+            "projects"
+          ],
+          "sidebar": []
+        },
+        {
+          "fullWidth": true,
+          "main": [
+            "ksbaw7mztjyjbadwnwb0ge6s",
+            "019caf44-be2c-7378-8f98-5151b221e6be"
+          ],
+          "sidebar": []
+        }
+      ]
+    },
+    "css": {
+      "enabled": false,
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}"
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 6,
+      "marginX": 18,
+      "marginY": 18,
+      "format": "a4",
+      "locale": "en-US",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(71, 85, 105, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "Lora",
+        "fontWeights": [
+          "400"
+        ],
+        "fontSize": 10.5,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "Lora",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 13.5,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": ""
+  }
+}

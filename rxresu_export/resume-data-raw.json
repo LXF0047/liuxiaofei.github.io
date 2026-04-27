@@ -1,0 +1,442 @@
+{
+  "id": "019befad-5037-7589-98d9-f39246bbcad0",
+  "name": "2025cv",
+  "slug": "2025cv",
+  "tags": [],
+  "isPublic": false,
+  "isLocked": false,
+  "data": {
+    "picture": {
+      "hidden": false,
+      "url": "",
+      "size": 64,
+      "rotation": 0,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "borderColor": "rgba(0, 0, 0, 0)",
+      "borderWidth": 0,
+      "shadowColor": "rgba(0, 0, 0, 0.5)",
+      "shadowWidth": 0
+    },
+    "basics": {
+      "name": "刘晓飞",
+      "headline": "大模型｜机器学习",
+      "email": "liuxiaofei0047@gmail.com",
+      "phone": "",
+      "location": "",
+      "website": {
+        "url": "",
+        "label": ""
+      },
+      "customFields": [
+        {
+          "id": "019cafa2-473b-763a-a584-5d07bbe64715",
+          "icon": "github-logo",
+          "text": "https://github.com/LXF0047",
+          "link": ""
+        }
+      ]
+    },
+    "summary": {
+      "title": "专业技能",
+      "columns": 1,
+      "hidden": false,
+      "content": "<ul><li><p><strong>大模型:</strong> 深入掌握<em>Transformer</em>系列<em>BERT、GPT</em>等模型基本原理及应用；熟练<em>Qwen</em>系列模型微调（<em>SFT/LoRA/DeepSpeed）</em>；熟悉<em>LangChain、LangGraph、OpenManaus、Nemo Guardrails</em>等框架，用于<em>RAG</em>和<em>Agent</em>系统开发。</p></li><li><p><strong>机器学习:</strong>掌握常见机器学模型基本原理；熟练掌握<em>XGBoost、LightGBM、RF</em>等集成模型基本原理与调参优化；<strong> </strong>熟练使用<em>pandas、numpy、sklearn、PyTorch、TensorFlow</em>等常用工具；</p></li><li><p>其他: 熟悉大模型安全领域提示词<em>jailbreak、injection</em>检测架构方案设计。安全智能<em>SOC</em>系统构建。</p></li><li><p>CET6</p></li></ul><p></p>"
+    },
+    "sections": {
+      "profiles": {
+        "title": "Profiles",
+        "columns": 1,
+        "hidden": true,
+        "items": []
+      },
+      "experience": {
+        "title": "工作经历",
+        "columns": 1,
+        "hidden": false,
+        "items": [
+          {
+            "id": "fpdvq6uzamvik0btxxx6yjza",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "company": "上海斗象信息科技有限公司（FreeBuf&VulBox）",
+            "position": "高级机器学习工程师",
+            "location": "",
+            "period": "2021.11 - 2025.8",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<ul><li><p>主导大模型系统安全防护项目。实现大模型系统中模型输入输出内容的安全风险和隐私数据泄露风险检测方案。</p></li><li><p>主导漏洞智能化复现智能体项目。实现漏洞盒子中SQL注入类报告的自动化复现与报告输出。</p></li><li><p>主导网络安全垂域模型微调项目。完成训练数据清洗、SFT数据构建和基于Qwen、盘古系列模型的微调以及PPO对齐工作。</p></li><li><p>主导SOC智能RAG助手项目。在多项目中定制化开发RAG助手，支持多种数据源的检索和问答功能。</p></li><li><p>参与流量检测模型优化。</p></li></ul><p></p>",
+            "roles": []
+          },
+          {
+            "id": "ve3s0f9cns5jrhz4na7iz921",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "company": "北京金睛云华科技有限公司",
+            "position": "机器学习开发工程师",
+            "location": "",
+            "period": "2020.3 - 2021.10",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<ul><li><p>参与恶意加密流量检测模型和家族多分类模型的开发和优化。</p></li><li><p>参与DGA流量检测模型的开发和优化。</p></li><li><p>参与SQL注入检测模型的开发和优化。</p></li></ul><p></p>",
+            "roles": []
+          }
+        ]
+      },
+      "education": {
+        "title": "教育经历",
+        "columns": 1,
+        "hidden": false,
+        "items": [
+          {
+            "id": "qah2yy0kbbw1rbfr9mvl01ch",
+            "hidden": false,
+            "school": "东北大学",
+            "degree": "硕士",
+            "area": "软件工程",
+            "grade": "",
+            "location": "",
+            "period": "2017.9 - 2020.1",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": ""
+          },
+          {
+            "id": "uh8szbf0i2rrxa4chp3ltc8k",
+            "hidden": false,
+            "school": "大连交通大学",
+            "degree": "本科",
+            "area": "软件工程",
+            "grade": "",
+            "location": "",
+            "period": "2013.9 - 2017.6",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": ""
+          }
+        ]
+      },
+      "projects": {
+        "title": "项目经历",
+        "columns": 1,
+        "hidden": false,
+        "items": [
+          {
+            "id": "019dcdbb-471b-77bc-82ae-47ccaa770f76",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "多智能体自优化渗透测试系统",
+            "period": "",
+            "website": {
+              "url": "https://github.com/LXF0047/greyhound",
+              "label": "gtihub"
+            },
+            "description": "<p><em>设计并实现多Agent安全测试框架，支持root、recon、exploit等Agent，使用Hybrid Agent Teams + Delegation多Agent结构实现。</em></p><ul><li><p>设计并实现Hybrid Agent Teams + Delegation结构的多Agent安全测试框架。</p></li><li><p>构建多级Memory结构，优化子agent在运行时token消耗与已知信息的平衡。</p></li><li><p>解决多级agent间工具重复调用、任务级无线循环、工具错误调用导致的任务提前结束等问题。</p></li><li><p>失败任务日志回放，最小化修改相关skill中内容，实现系统自我优化。</p></li></ul><p></p>"
+          },
+          {
+            "id": "umpqyjfs3242psbauzq0yox6",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "LLM安全计算云",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p><em>构建大模型安全护栏。支持在线云和私有化两种部署方式。用于企业大模型相关应用的输入输出控制，主要功能包括检测提示词越狱、提示词注入、敏感内容识别、特定内容过滤等。</em></p><ul><li><p>构建检测架构流程、对比Nvidia nemo、Gemma shield、Llama guard等LLM安全防护平台或模型能力。</p></li><li><p>基于mDeBERTa模型微调Prompt injection &amp; jailbreak检测模型（二分类、三分类）。构建5w+中文标注数据。F1-score提升0.21。</p></li><li><p>基于Qwen3 0.6B、1.7B、8B模型微调Prompt content safety检测模型。标注8w中文数据。效果较基模型提升27%。</p></li><li><p>基于Qwen1.7B模型计算困惑度，通过启发式方法检测Prompt jailbreak检测模型。标注1w中文数据，效果较基模型提升14%。</p></li><li><p>隐私数据识别，构造1w中文数据训练NER模型并调优。TPS提升。</p></li><li><p>RAG事实相关性检测。</p></li><li><p>qwen模型越狱风险评测，使用不同越狱方式对qwen系列模型的能力进行评测，使用神经网络测试方式构建检测集。</p></li></ul><p></p>"
+          },
+          {
+            "id": "o3u3qosqfps8mgxbkmm1qv7i",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "漏洞报告自动化复现",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p style=\"text-align: left;\"><em>构建依据漏洞报告内容自动化复现漏洞的智能体系统。漏洞为漏洞盒子(vulbox)中的漏洞报告，依据漏洞报告中的漏洞类别、版本、复现逻辑等报告中关键信息，设计自动化复现系统，复现报告中的操作流程。</em></p><ul><li><p style=\"text-align: left;\">构建human-in-loop的agent架构，包括controller、events、session、agent、tracer五个模块。</p></li><li><p style=\"text-align: left;\">构建报告内容解析与关键实体提取Agent用于提取主题信息。通过合理性分析模型进行校验。</p></li><li><p>构建sqlmap自动化复现工具、使用意图识别与fewshot方式自动化sqlmap工具。</p></li><li><p>针对微信小程序和公众号漏洞构建app控制工具，基于OmniParser+pyautogui实现自动化输入与点击流程。</p></li><li><p>优化OmniParser中操作框中的识别准确度，准确度提升15%、同时降低了70%的token消耗。</p></li></ul><p></p>"
+          },
+          {
+            "id": "kb0njqqcaq4mfgok5c5738pz",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "网络安全垂域模型",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p><em>在不同体量模型上继续预训练+微调安全领域数据，构建安全垂域模型，主要偏向于漏洞方向</em>。</p><ul><li><p>继续预训练数据处理，构建80b token训练数据集，ftfy修复数据编码，动态re-weighting数据采样。</p></li><li><p>漏洞报告评分及标注，使用5k sft数据微调后结合few-shot实现漏洞盒子报告的评分及问题标注。</p></li><li><p>漏洞报告复现步骤优化与编排，实现核心步骤重编排。</p></li><li><p>sft数据构建。DeepSpeed全参微调继续预训练模型，Lora微调漏洞相关模型。</p></li><li><p>基于Qwen2.5-VL微调多模态大模型以解决漏洞报告中图片中包含关键信息问题。</p></li></ul><p></p>"
+          }
+        ]
+      },
+      "skills": {
+        "title": "Skills",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      },
+      "languages": {
+        "title": "Languages",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      },
+      "interests": {
+        "title": "Interests",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      },
+      "awards": {
+        "title": "竞赛",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      },
+      "certifications": {
+        "title": "其他",
+        "columns": 1,
+        "hidden": false,
+        "items": [
+          {
+            "id": "izowq10e3yldavqp5ewc85hx",
+            "hidden": false,
+            "title": "专利",
+            "issuer": "",
+            "date": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p>《子域名生成方法、子域名命名规律学习方法、装置》</p>"
+          },
+          {
+            "id": "z3sh46s8az0gbnwz75hv1p2n",
+            "hidden": false,
+            "title": "国家重点研发计划",
+            "issuer": "",
+            "date": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p>4.2 资本市场人工智能服务与安全监管协同技术</p>"
+          },
+          {
+            "id": "b93ps0tyt48bnpplt3i7vacc",
+            "hidden": false,
+            "title": "竞赛",
+            "issuer": "",
+            "date": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<ul><li><p>招商银行Fintech精英训练营企业财务造假预测第10名</p></li><li><p>中国银联极客挑战赛数据建模赛道决赛第8名</p></li></ul>"
+          }
+        ]
+      },
+      "publications": {
+        "title": "Publications",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      },
+      "volunteer": {
+        "title": "Volunteering",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      },
+      "references": {
+        "title": "References",
+        "columns": 1,
+        "hidden": false,
+        "items": []
+      }
+    },
+    "customSections": [
+      {
+        "title": "项目经历",
+        "columns": 1,
+        "hidden": false,
+        "id": "ksbaw7mztjyjbadwnwb0ge6s",
+        "type": "experience",
+        "items": []
+      },
+      {
+        "title": "项目经历",
+        "columns": 1,
+        "hidden": false,
+        "id": "019caf44-be2c-7378-8f98-5151b221e6be",
+        "type": "projects",
+        "items": [
+          {
+            "id": "lem4fzbafl5xr10p3j16wa3v",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "SOC平台问答系统",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p><em>SOC平台接入大模型智能问答。根据平台态势感知、威胁告警、本地企业知识库构建RAG问答系统。</em></p><ul><li><p>定制化语料收集与整理，使用小模型构建语料的多级索引。</p></li><li><p>语料切分，使用label+相似度混合召回方式查询数据并进行重排序。召回率提高5%。</p></li><li><p>构建Faiss向量数据库。</p></li><li><p>根据数据库表结构设计NL2SQL提示词与相似问题命中跳转功能。减少重复问题的token消耗、提高SQL查询准确性与效率。</p></li><li><p>问答结果后处理，隐私数据过滤，回答一致性检测。</p></li></ul><p></p>"
+          },
+          {
+            "id": "rv24apfk61u8vujpdh42bsoc",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "漏洞情报数据自动补全",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p><em>分析情报数据中的内容，构建向量数据库快速查找版本号，cve编号等相似内容。</em></p><ul><li><p>从Mysql中自动化提取CPE字段，JSON格式化后进行向量化处理，构建Milvus向量数据库支持快速检索。</p></li><li><p>使用Qwen模型解析漏洞情报数据，提取符合CPE格式的字符串并转为JSON对象，转为向量后在Milvus中查询。</p></li><li><p>Qwen分析漏洞描述文本并提取情报文本。提取标准化字符串。</p></li><li><p>基于向量检索返回候选CPE，结合大模型抽取版本限制条件实现精确筛选。</p></li></ul><p></p>"
+          },
+          {
+            "id": "019caf40-eef7-70d9-ba7d-6dd40d25d057",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "恶意加密流量检测与家族识别",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p><em>在时序窗口内通过多模型投票机制检测恶意加密流量，并进行恶意加组多分类</em></p><ul><li><p>采集开源恶意加密样本与自研沙箱样本，完成数据清洗与标准化处理。</p></li><li><p>提取多维特征（如TLS指纹、DNS行为、流量统计等），构建LightGBM、XGBoost、RandomForest等多种模型。</p></li><li><p>融合多模型预测结果形成投票机制，提升恶意流量检测精度。</p></li><li><p>优化模型推理速度，设计后处理逻辑过滤误报样本，提升实际检出率。</p></li><li><p>利用情报源进行交叉验证，增强模型泛化能力。</p></li><li><p>构建XGBoost多分类模型覆盖33个家族类别。</p></li></ul><p></p>"
+          },
+          {
+            "id": "019cae4e-be9b-72ba-bc17-3a61d84ea645",
+            "hidden": false,
+            "options": {
+              "showLinkInTitle": false
+            },
+            "name": "DGA流量检测",
+            "period": "",
+            "website": {
+              "url": "",
+              "label": ""
+            },
+            "description": "<p><em>构建DGA域名二分类与多分类模型，设计线上环境的去误报系统。针对单词类型家族域名优化检测能力。</em></p><ul><li><p>提取结构、统计与语言特征构建DGA识别模型，融合多模型构建Stacking集成分类器。</p></li><li><p>设计词表碰撞与投票机制进行家族识别，结合静态分析与行为分析提升准确性。</p></li><li><p>引入基于IP与域名的离线关联分析，准确识别Fast-Flux策略背后的活跃僵尸网络，有效降低误报率。</p></li><li><p>单词类型域名词表内容优化，结合BERT模型做语义检测。</p></li></ul><p></p>"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "template": "rhyhorn",
+      "layout": {
+        "sidebarWidth": 35,
+        "pages": [
+          {
+            "fullWidth": false,
+            "main": [
+              "summary",
+              "profiles",
+              "education",
+              "experience",
+              "certifications"
+            ],
+            "sidebar": [
+              "skills",
+              "interests",
+              "publications",
+              "volunteer",
+              "references",
+              "awards",
+              "languages"
+            ]
+          },
+          {
+            "fullWidth": true,
+            "main": [
+              "projects"
+            ],
+            "sidebar": []
+          },
+          {
+            "fullWidth": true,
+            "main": [
+              "ksbaw7mztjyjbadwnwb0ge6s",
+              "019caf44-be2c-7378-8f98-5151b221e6be"
+            ],
+            "sidebar": []
+          }
+        ]
+      },
+      "css": {
+        "enabled": false,
+        "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}"
+      },
+      "page": {
+        "gapX": 4,
+        "gapY": 6,
+        "marginX": 18,
+        "marginY": 18,
+        "format": "a4",
+        "locale": "en-US",
+        "hideIcons": false
+      },
+      "design": {
+        "level": {
+          "icon": "star",
+          "type": "circle"
+        },
+        "colors": {
+          "primary": "rgba(71, 85, 105, 1)",
+          "text": "rgba(0, 0, 0, 1)",
+          "background": "rgba(255, 255, 255, 1)"
+        }
+      },
+      "typography": {
+        "body": {
+          "fontFamily": "Lora",
+          "fontWeights": [
+            "400"
+          ],
+          "fontSize": 10.5,
+          "lineHeight": 1.5
+        },
+        "heading": {
+          "fontFamily": "Lora",
+          "fontWeights": [
+            "600"
+          ],
+          "fontSize": 13.5,
+          "lineHeight": 1.5
+        }
+      },
+      "notes": ""
+    }
+  },
+  "hasPassword": false
+}
