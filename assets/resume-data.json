@@ -2,7 +2,7 @@
   "meta": {
     "resumeName": "2025cv",
     "resumeId": "019befad-5037-7589-98d9-f39246bbcad0",
-    "generatedAt": "2026-03-03T01:27:38"
+    "generatedAt": "2026-04-27T19:49:17"
   },
   "profile": {
     "name": "刘晓飞",
@@ -17,6 +17,11 @@
         "label": "Email",
         "url": "mailto:liuxiaofei0047@gmail.com",
         "type": "email"
+      },
+      {
+        "label": "https://github.com/LXF0047",
+        "url": "",
+        "type": "link"
       }
     ]
   },
@@ -49,6 +54,15 @@
     "title": "项目经历",
     "items": [
       {
+        "name": "多智能体自优化渗透测试系统",
+        "period": "",
+        "description": "<p><em>设计并实现多Agent安全测试框架，支持root、recon、exploit等Agent，使用Hybrid Agent Teams + Delegation多Agent结构实现。</em></p><ul><li><p>设计并实现Hybrid Agent Teams + Delegation结构的多Agent安全测试框架。</p></li><li><p>构建多级Memory结构，优化子agent在运行时token消耗与已知信息的平衡。</p></li><li><p>解决多级agent间工具重复调用、任务级无线循环、工具错误调用导致的任务提前结束等问题。</p></li><li><p>失败任务日志回放，最小化修改相关skill中内容，实现系统自我优化。</p></li></ul><p></p>",
+        "website": {
+          "url": "https://github.com/LXF0047/greyhound",
+          "label": "gtihub"
+        }
+      },
+      {
         "name": "LLM安全计算云",
         "period": "",
         "description": "<p><em>构建大模型安全护栏。支持在线云和私有化两种部署方式。用于企业大模型相关应用的输入输出控制，主要功能包括检测提示词越狱、提示词注入、敏感内容识别、特定内容过滤等。</em></p><ul><li><p>构建检测架构流程、对比Nvidia nemo、Gemma shield、Llama guard等LLM安全防护平台或模型能力。</p></li><li><p>基于mDeBERTa模型微调Prompt injection &amp; jailbreak检测模型（二分类、三分类）。构建5w+中文标注数据。F1-score提升0.21。</p></li><li><p>基于Qwen3 0.6B、1.7B、8B模型微调Prompt content safety检测模型。标注8w中文数据。效果较基模型提升27%。</p></li><li><p>基于Qwen1.7B模型计算困惑度，通过启发式方法检测Prompt jailbreak检测模型。标注1w中文数据，效果较基模型提升14%。</p></li><li><p>隐私数据识别，构造1w中文数据训练NER模型并调优。TPS提升。</p></li><li><p>RAG事实相关性检测。</p></li><li><p>qwen模型越狱风险评测，使用不同越狱方式对qwen系列模型的能力进行评测，使用神经网络测试方式构建检测集。</p></li></ul><p></p>",
@@ -58,12 +72,6 @@
         "name": "漏洞报告自动化复现",
         "period": "",
         "description": "<p style=\"text-align: left;\"><em>构建依据漏洞报告内容自动化复现漏洞的智能体系统。漏洞为漏洞盒子(vulbox)中的漏洞报告，依据漏洞报告中的漏洞类别、版本、复现逻辑等报告中关键信息，设计自动化复现系统，复现报告中的操作流程。</em></p><ul><li><p style=\"text-align: left;\">构建human-in-loop的agent架构，包括controller、events、session、agent、tracer五个模块。</p></li><li><p style=\"text-align: left;\">构建报告内容解析与关键实体提取Agent用于提取主题信息。通过合理性分析模型进行校验。</p></li><li><p>构建sqlmap自动化复现工具、使用意图识别与fewshot方式自动化sqlmap工具。</p></li><li><p>针对微信小程序和公众号漏洞构建app控制工具，基于OmniParser+pyautogui实现自动化输入与点击流程。</p></li><li><p>优化OmniParser中操作框中的识别准确度，准确度提升15%、同时降低了70%的token消耗。</p></li></ul><p></p>",
-        "website": null
-      },
-      {
-        "name": "SOC平台问答系统",
-        "period": "",
-        "description": "<p><em>SOC平台接入大模型智能问答。根据平台态势感知、威胁告警、本地企业知识库构建RAG问答系统。</em></p><ul><li><p>定制化语料收集与整理，使用小模型构建语料的多级索引。</p></li><li><p>语料切分，使用label+相似度混合召回方式查询数据并进行重排序。召回率提高5%。</p></li><li><p>构建Faiss向量数据库。</p></li><li><p>根据数据库表结构设计NL2SQL提示词与相似问题命中跳转功能。减少重复问题的token消耗、提高SQL查询准确性与效率。</p></li><li><p>问答结果后处理，隐私数据过滤，回答一致性检测。</p></li></ul><p></p>",
         "website": null
       },
       {
@@ -133,15 +141,9 @@
       "title": "项目经历",
       "items": [
         {
-          "name": "DGA流量检测优化",
+          "name": "SOC平台问答系统",
           "period": "",
-          "description": "<p><em>针对单词类型家族域名优化检测能力；对云服务类域名误报优化。</em></p><ul><li><p>扩充域名分词字典，补充常见英文缩写、品牌缩写、拼音词等特殊实体词，提高模型对真是域名中有意义词识别能力。</p></li><li><p>针对单词类型DGA家族构建新特征，如词义连续性评分等，增强原模型分类能力。</p></li><li><p>使用DBSCAN聚类来对不同DGA家族进行聚类，有效识别伪随机单词模式，辅助规则与模型进行优化。</p></li><li><p>针对服务器和cdn域名特殊案例构架规则白名单，显著降低模型误报率，实现低误报下的高召回。</p></li></ul><p></p>",
-          "website": null
-        },
-        {
-          "name": "流量动态基线检测",
-          "period": "",
-          "description": "<p><em>检测服务器流量，使用时序模型结合规则构建流量动态基线和多级告警机制。</em></p><ul><li><p>流量数据异常点处理，重复数据合并。</p></li><li><p>使用Prophet算法构建多周期时间序列模型，对流量进行趋势性预测，对异常值做置信区界分级处理。</p></li><li><p>结合规则对模型进行特殊日期增强，提升边界场景下的检测准确性。</p></li></ul><p></p>",
+          "description": "<p><em>SOC平台接入大模型智能问答。根据平台态势感知、威胁告警、本地企业知识库构建RAG问答系统。</em></p><ul><li><p>定制化语料收集与整理，使用小模型构建语料的多级索引。</p></li><li><p>语料切分，使用label+相似度混合召回方式查询数据并进行重排序。召回率提高5%。</p></li><li><p>构建Faiss向量数据库。</p></li><li><p>根据数据库表结构设计NL2SQL提示词与相似问题命中跳转功能。减少重复问题的token消耗、提高SQL查询准确性与效率。</p></li><li><p>问答结果后处理，隐私数据过滤，回答一致性检测。</p></li></ul><p></p>",
           "website": null
         },
         {
@@ -157,9 +159,9 @@
           "website": null
         },
         {
-          "name": "DGA域名检测",
+          "name": "DGA流量检测",
           "period": "",
-          "description": "<p><em>DGA域名识别，DGA域名恶意家族分类。</em></p><ul><li><p>提取结构、统计与语言特征构建DGA识别模型，融合多模型构建Stacking集成分类器。</p></li><li><p>设计词表碰撞与投票机制进行家族识别，结合静态分析与行为分析提升准确性。</p></li><li><p>优化检测速率，支持批量域名实时处理。</p></li><li><p>引入基于IP与域名的离线关联分析，准确识别Fast-Flux策略背后的活跃僵尸网络，有效降低误报率。</p></li></ul><p></p>",
+          "description": "<p><em>构建DGA域名二分类与多分类模型，设计线上环境的去误报系统。针对单词类型家族域名优化检测能力。</em></p><ul><li><p>提取结构、统计与语言特征构建DGA识别模型，融合多模型构建Stacking集成分类器。</p></li><li><p>设计词表碰撞与投票机制进行家族识别，结合静态分析与行为分析提升准确性。</p></li><li><p>引入基于IP与域名的离线关联分析，准确识别Fast-Flux策略背后的活跃僵尸网络，有效降低误报率。</p></li><li><p>单词类型域名词表内容优化，结合BERT模型做语义检测。</p></li></ul><p></p>",
           "website": null
         }
       ]

@@ -10,10 +10,11 @@ from typing import Any
 
 import requests
 
+from rxresu.env import load_project_env
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = PROJECT_ROOT / "assets" / "resume-data.json"
 DEFAULT_OUTPUT = PROJECT_ROOT / "assets" / "resume-data-en.json"
-DEFAULT_API_KEY_FILE = PROJECT_ROOT / "apikeys" / "deepseek_api_key.txt"
 DEFAULT_BASE_URL = "https://api.deepseek.com"
 DEFAULT_MODEL = "deepseek-chat"
 
@@ -148,20 +149,21 @@ def extract_json_object(text: str) -> dict[str, str]:
     return {str(k): str(v) for k, v in parsed.items()}
 
 
-def read_api_key(api_key: str = "", api_key_file: Path = DEFAULT_API_KEY_FILE) -> str:
+def read_api_key(api_key: str = "", api_key_file: Path | None = None) -> str:
     if api_key:
         return api_key.strip()
 
+    load_project_env()
     env_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
     if env_key:
         return env_key
 
-    if api_key_file.exists():
+    if api_key_file is not None and api_key_file.exists():
         file_key = api_key_file.read_text(encoding="utf-8").strip()
         if file_key:
             return file_key
 
-    raise DeepSeekTranslateError(f"未提供 DeepSeek API Key: {api_key_file}")
+    raise DeepSeekTranslateError("未提供 DeepSeek API Key，请在本地 .env 中设置 DEEPSEEK_API_KEY")
 
 
 def translate_simplified_map(
@@ -223,7 +225,7 @@ def translate_resume_json(
     input_path: Path = DEFAULT_INPUT,
     output_path: Path = DEFAULT_OUTPUT,
     api_key: str = "",
-    api_key_file: Path = DEFAULT_API_KEY_FILE,
+    api_key_file: Path | None = None,
     base_url: str = DEFAULT_BASE_URL,
     model: str = DEFAULT_MODEL,
     timeout: int = 120,

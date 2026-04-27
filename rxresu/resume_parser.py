@@ -2,16 +2,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 import requests
 
+from rxresu.env import load_project_env
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RESUME_NAME = "2025cv"
-DEFAULT_API_KEY_PATH = PROJECT_ROOT / "apikeys" /"rxresu_api_key.txt"
 DEFAULT_OUTPUT_PATH = PROJECT_ROOT / "assets" / "resume-data.json"
+DEFAULT_RAW_OUTPUT_PATH = PROJECT_ROOT / "assets" / "resume-data-raw.json"
 DEFAULT_BACKGROUND = "assets/background.webp"
 DEFAULT_BASE_URL = "https://rxresu.me/api/openapi"
 
@@ -347,23 +350,46 @@ def parse_resume_payload(payload: dict[str, Any], resume_name: str, background_i
     return parsed
 
 
-def read_api_key(path: Path) -> str:
-    if not path.exists():
-        raise FileNotFoundError(f"API key 文件不存在: {path}")
-    return path.read_text(encoding="utf-8").strip()
+def read_api_key(api_key: str = "", api_key_file: Path | None = None) -> str:
+    if api_key:
+        return api_key.strip()
+
+    load_project_env()
+    env_key = os.getenv("RXRESU_API_KEY", "").strip()
+    if env_key:
+        return env_key
+
+    if api_key_file is not None and api_key_file.exists():
+        file_key = api_key_file.read_text(encoding="utf-8").strip()
+        if file_key:
+            return file_key
+
+    raise FileNotFoundError("未提供 Reactive Resume API Key，请在本地 .env 中设置 RXRESU_API_KEY")
+
+
+def save_raw_payload(payload: dict[str, Any], output_path: Path) -> Path:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return output_path
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="拉取并解析 Reactive Resume JSON")
     parser.add_argument("--resume-name", default=DEFAULT_RESUME_NAME, help="简历名称")
     parser.add_argument("--api-key", default="", help="OpenAPI key，可选")
-    parser.add_argument("--api-key-file", default=str(DEFAULT_API_KEY_PATH), help="API key 文件路径")
+    parser.add_argument("--api-key-file", default="", help="API key 文件路径（不推荐，优先使用 .env）")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT_PATH), help="输出 JSON 路径")
+    parser.add_argument(
+        "--raw-output",
+        default=str(DEFAULT_RAW_OUTPUT_PATH),
+        help="原始 API JSON 输出路径",
+    )
     parser.add_argument("--background-image", default=DEFAULT_BACKGROUND, help="背景图路径（写入输出 JSON）")
     parser.add_argument("--base-url", default=DEFAULT_BASE_URL, help="Reactive Resume OpenAPI 地址")
     args = parser.parse_args()
 
-    api_key = args.api_key or read_api_key(Path(args.api_key_file))
+    api_key_file = Path(args.api_key_file) if args.api_key_file else None
+    api_key = read_api_key(api_key=args.api_key, api_key_file=api_key_file)
 
     try:
         payload = get_resume_json_by_name(
@@ -377,11 +403,15 @@ def main() -> None:
     if not payload:
         raise SystemExit(f"未找到名为 {args.resume_name} 的简历")
 
+    raw_output_path = Path(args.raw_output)
+    save_raw_payload(payload, raw_output_path)
+
     parsed = parse_resume_payload(payload, args.resume_name, args.background_image)
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(parsed, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    print(f"已输出原始简历数据: {raw_output_path}")
     print(f"已输出解析后的简历数据: {output_path}")
 
 

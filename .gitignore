@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+
+apikeys/
+
+.DS_Store
+.idea/
+__pycache__/
+*.py[cod]
